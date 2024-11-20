@@ -1,0 +1,314 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh; 
+    position: relative;
+    padding-top: 70px; 
+    color: black;
+}
+
+
+.logo {
+    width: 200px;
+    float: left;
+    padding-left: 20px;
+	padding-top: 0px;
+	
+   
+}
+
+.logo img{
+margin-left: 10px;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: gainsboro;
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.menu {
+    display: flex;
+    margin-left: auto;
+}
+
+.menu a {
+    
+    color: rgb(0, 0, 0);
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+	font-family: Arial, sans-serif;
+    font-size: 14px; 
+    font-weight: bold;
+	margin-top: 0;
+}
+
+.menu a:hover {
+    background-color:black ;
+    color: rgb(221, 221, 221);
+}
+
+main {
+    text-align: center;
+    color: #000000;  
+    margin: 80px 0;
+}
+
+.welcome {
+    margin: 40px 0;
+}
+
+.welcome-img{
+	margin-top: 40px;
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+.welcome h1 {
+	margin-bottom: 40px;
+	margin-top: 80px;
+    font-size: 36px;
+    color: #333;
+}
+
+.welcome p {
+	font-family: Arial, sans-serif;
+    font-size: 25px;
+    color: #555;
+	margin-left: 20px;
+	margin-right: 20px;
+	display: flex;
+	
+}
+
+.welcome button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.welcome button:hover {
+    background-color: #555;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+	margin-top: 12px;
+}
+
+.search input {
+    padding: 8px;
+    border: 1px solid #444;
+    background-color: #222; 
+    border-radius: 4px;
+    margin: 15px 15px;
+    outline: none;
+}
+
+.search input:focus {
+    border-color: #555;
+}
+
+.search .btn {
+    background-color: #333; 
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.search .btn:hover {
+    background-color: #555; 
+
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
+
+.footer-content a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.about {
+	font-family: Arial, sans-serif;
+	text-align: center;
+    color: #f4f4f4;  
+	margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.about h1 {
+	margin-bottom: 30px;
+	margin-top: 40px;
+    font-size: 36px;
+    color: #333;
+}
+
+.about p {
+	font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #555;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 90px;
+	display: flex;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact {
+    display: flex;
+    width: 80%;
+    margin: 40px auto;
+    background-color: #e0e0e0; 
+    border-radius: 8px;
+    overflow: hidden;
+	font-family: Arial, sans-serif;
+}
+
+.contact-image {
+    width: 50%;
+}
+
+.contact-form {
+    width: 50%;
+    padding: 20px;
+    color: black;
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: black;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    color: black;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+    }
+    .contact-image, .contact-form {
+        width: 100%;
+    }
+}
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #555;
+}
+.disease-result {
+    background-color: #f4f4f4; /* Light background for contrast */
+    border: 1px solid #ddd;   /* Light border */
+    border-radius: 8px;       /* Rounded corners */
+    padding: 15px;            /* Padding inside the box */
+    margin: 10px 0;          /* Space between results */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.disease-result p {
+    margin: 5px 0;           /* Space between paragraphs */
+    color: #333;             /* Darker text color for readability */
+}
+
+.disease-result strong {
+    color: #000;             /* Strong text in black for emphasis */
+}
